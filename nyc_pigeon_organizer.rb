@@ -93,7 +93,7 @@ def collect_lives(data, selected_name)
     end
   end
   
-  output=glives
+  output=lives
 end
 
 def nyc_pigeon_organizer(data)
