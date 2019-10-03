@@ -107,7 +107,7 @@ def nyc_pigeon_organizer(data)
    colors=collect_colors(data, name)
    output_hash[name][:color]=colors
    
-   #gender=collect_gender(data, name)
+   gender=collect_gender(data, name)
    #output_hash[name][:gender]=gender
  end
  
