@@ -73,7 +73,7 @@ def collect_gender(data, selected_name)
   data[:gender].each do |sex, names|
     names.each do |name|
       if name==selected_name
-        gender.push(sex)
+        gender.push(sex.to_s)
       end
     end
   end
