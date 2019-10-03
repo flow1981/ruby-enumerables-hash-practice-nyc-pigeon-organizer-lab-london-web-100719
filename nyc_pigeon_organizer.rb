@@ -124,9 +124,6 @@ def nyc_pigeon_organizer(data)
    output_hash[name][:lives]=lives
  end
  
- 
- puts 'outputhash'
- puts output_hash
  output_hash
 end
 
