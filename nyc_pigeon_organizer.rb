@@ -74,7 +74,9 @@ def collect_gender(data, selected_name)
     sex.each do |name|
       if name==selected_name
         gender.push(sex)
+        puts 'in if'
         puts sex
+        puts '--'
       end
     end
   end
