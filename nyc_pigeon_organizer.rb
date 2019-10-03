@@ -72,14 +72,9 @@ def collect_gender(data, selected_name)
   puts 'collect gender'
   
   data[:gender].each do |sex, names|
-    puts sex
     names.each do |name|
-      puts name
       if name==selected_name
         gender.push(sex)
-        puts 'in if'
-        puts sex
-        puts '--'
       end
     end
   end
@@ -110,7 +105,7 @@ def nyc_pigeon_organizer(data)
    output_hash[name][:color]=colors
    
    gender=collect_gender(data, name)
-   #output_hash[name][:gender]=gender
+   output_hash[name][:gender]=gender
  end
  
  
