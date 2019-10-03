@@ -72,6 +72,7 @@ def collect_gender(data, selected_name)
   puts 'collect gender'
   
   data[:gender].each do |sex, names|
+    puts sex
     sex.each do |name|
       if name==selected_name
         gender.push(sex)
