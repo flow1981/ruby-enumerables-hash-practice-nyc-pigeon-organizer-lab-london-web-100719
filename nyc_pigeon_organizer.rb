@@ -71,9 +71,9 @@ def collect_gender(data, selected_name)
   gender=[]
   
   data[:gender].each do |sex, names|
-    names.each do |name|
+    sex.each do |name|
       if name==selected_name
-        color_list.push(sex)
+        gender.push(sex)
       end
     end
   end
