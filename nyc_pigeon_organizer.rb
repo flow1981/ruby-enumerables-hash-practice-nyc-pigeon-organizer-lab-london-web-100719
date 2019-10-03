@@ -69,8 +69,7 @@ end
 def collect_gender(data, selected_name)
   output=[]
   gender=[]
-  puts 'collect gender'
-  
+
   data[:gender].each do |sex, names|
     names.each do |name|
       if name==selected_name
@@ -82,6 +81,20 @@ def collect_gender(data, selected_name)
   output=gender
 end
 
+def collect_lives(data, selected_name)
+  output=[]
+  lives=[]
+
+  data[:lives].each do |location, names|
+    names.each do |name|
+      if name==selected_name
+        lives.push(location)
+      end
+    end
+  end
+  
+  output=glives
+end
 
 def nyc_pigeon_organizer(data)
  
