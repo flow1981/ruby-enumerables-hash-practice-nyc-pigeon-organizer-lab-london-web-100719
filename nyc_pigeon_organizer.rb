@@ -69,6 +69,7 @@ end
 def collect_gender(data, selected_name)
   output=[]
   gender=[]
+  puts 'collect gender'
   
   data[:gender].each do |sex, names|
     sex.each do |name|
