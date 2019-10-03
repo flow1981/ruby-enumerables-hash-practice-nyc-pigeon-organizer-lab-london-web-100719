@@ -120,7 +120,7 @@ def nyc_pigeon_organizer(data)
    gender=collect_gender(data, name)
    output_hash[name][:gender]=gender
    
-   lives=collect_gender(data, name)
+   lives=collect_lives(data, name)
    output_hash[name][:lives]=lives
  end
  
